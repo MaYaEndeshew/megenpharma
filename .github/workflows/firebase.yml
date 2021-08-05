@@ -25,7 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install react-bootstrap   
-    - name: react-bootstrap install
     - run: npm install -g yarn
     - name: yarn install, build and test
       run: |
