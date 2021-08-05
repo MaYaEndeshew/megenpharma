@@ -1,4 +1,4 @@
-import React,{useRef,useEffect} from 'react';
+import React from 'react';
 import Video1 from '../../images/videos/pills.mp4';
 import {HeroContainer,HeroBg,HeroContent,HeroBtnWrap,HeroH1,HeroP,ArrowForward,ExtRoute} from './heroelements';
 
