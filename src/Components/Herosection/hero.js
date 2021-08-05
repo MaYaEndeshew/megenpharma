@@ -4,21 +4,36 @@ import {HeroContainer,HeroBg,HeroContent,HeroBtnWrap,HeroH1,HeroP,ArrowForward,E
 
 
 const Hero = () => {
-     const videoRef = useRef(null)
+     //  const videoRef = useRef(null)
     
     return (
              
            
-             useEffect(() => {
-                        const { current: videoElement } = videoRef
-                        videoElement.setAttribute('muted', '')
-                    }, []),
+            //  useEffect(() =>{
+            //             const { current: videoElement } = videoRef
+            //             videoElement.setAttribute('muted', '')
+            //         }, [ ]),
+
              <HeroContainer id={"home"} >
             
                 <HeroBg>
-                < video src={Video1} ref={videoRef} width='1500px' height="900px" playsInline autoPlay loop disablePictureInPicture muted />
-                {/* <img src={bckgimg} alt="bck" /> */}
-                </HeroBg>
+                < video 
+                   autoPlay
+                   loop 
+                   muted
+                   style={{
+                       position:"absolute",
+                       width: "100%",
+                       left: "50%",
+                       top: "50%",
+                       height: "100%",
+                       objectFit: "cover",
+                       transform: "translate(-50%,-50%)",
+                       zIndex: "-1"
+                      
+                    }}>
+                    <source src={Video1} type="video/mp4"/>
+                </video>
             
                <HeroContent>
                 {/* <button onClick={() => setModalIsOpen(true)}>Get An Estimate</button> */}
