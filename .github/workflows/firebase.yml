@@ -29,6 +29,7 @@ jobs:
       run: |
        yarn install
        yarn build
+       yarn add react-bootstrap
     - name: Archive Build
       uses: actions/upload-artifact@v2
       with:
