@@ -29,7 +29,7 @@ const Hero = () => {
                             height: "100%",
                             objectFit: "cover",
                             transform: "translate(-50%,-50%)",
-                            zIndex: "-1"
+                           // zIndex: "-1"
 
                          }}>
                          <source src={Video1} type="video/mp4"/>
