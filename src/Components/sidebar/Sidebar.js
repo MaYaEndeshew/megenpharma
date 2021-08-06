@@ -14,8 +14,8 @@ const Sidebar = ({isOpen,toggle}) => {
                     <SidebarLink to="services" onClick={toggle}> Services</SidebarLink>
                     <SidebarLink to="contact" onClick={toggle} >Contact Us</SidebarLink>
                     <SidebarLink to="about" onClick={toggle} >About Us</SidebarLink>
-                    <SidebarRoute to={{ pathname: "http://MegenagnaPharmacy/home" }} target="/"> Store</SidebarRoute>
-                    <SidebarRoute to={{ pathname: "http://MegenagnaPharmacy/blog" }} target="/"> Blog</SidebarRoute>
+                    <SidebarRoute to={{ pathname: "http://megenagnapharmacy.ga/home" }} target="/"> Store</SidebarRoute>
+                    <SidebarRoute to={{ pathname: "http://megenagnapharmacy.ga/blog" }} target="/"> Blog</SidebarRoute>
                 </SidebarMenu>
                 
             </SidebarWrapper>
